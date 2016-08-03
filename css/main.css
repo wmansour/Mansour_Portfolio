@@ -1,0 +1,161 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: #F1F1F1;
+}
+
+/*Header*/
+header {
+  background-color: #F1F1F1;
+  padding: 20px 30px;
+}
+
+.logo {
+  width: 200px;
+  float: left;
+}
+
+.title {
+  text-align: right;
+  font: 48px/46px "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  color: #5F8DD3;
+}
+
+.subtitle {
+  text-align: right;
+  font: 700 21px/23px "Cantarell", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: rgb(142, 142, 142);
+}
+
+/*Body*/
+.cover{
+  background: url(../images/Desk_1.jpg) center;
+  background-size: cover;
+  height: 300px;
+}
+
+.line {
+  border: 3px solid #5F8DD3;
+  margin-top: -1px;
+}
+
+/*Portfolio images*/
+.featured_work_title {
+  text-align: center;
+  font: 700 35px/23px'Cantarell', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 30px 0;
+}
+
+.work_line {
+  margin: 0 80px 30px;
+  border: 2px solid;
+}
+
+
+.work_examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right {
+  width: 65%;
+}
+
+.left {
+  width: 35%;
+  float: left;
+  padding: 0 4%;
+}
+
+.wedding {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.portfolio_pic {
+  width: 100%;
+}
+
+.placeholder {
+  margin-bottom: 11%;
+}
+/*FOOTER*/
+footer {
+  background-color: #5F8DD3;
+  margin: 30px 0 0 0;
+  display: flex;
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  margin: 10px 15px;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+.by_line {
+  float: right;
+  font: 700 12px 'Cantarell', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: white;
+  margin: auto 15px auto auto;
+}
+
+@media screen and (min-width: 1150px) {}
+  body {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+@media screen and (max-width: 600px) {
+  .title, .subtitle {
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto 10px auto;
+    float: none;
+  }
+
+  .right, .left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .work {
+    width: 77%;
+    margin: 0 auto 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  footer {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .by_line {
+    margin: 10px;
+    float: none;
+  }
+}
