@@ -13,18 +13,25 @@ body {
 /*Header*/
 .top-navbar {
   position: fixed;
+  max-width: 1100px;
   width: 100%;
   z-index: 99;
-}
-.links {
-  text-align: center;
   background-color: #0b3c5d;
+  display: flex;
+}
+.left-links {
+  padding: 15px 0;
+  width: 60%;
+}
+.right-links {
+  text-align: right;
   padding: 5px 0;
+  width: 40%;
 }
 .link {
-  border-right: 1px solid white;
   display: inline;
-  padding: 5px 14px 5px 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
 }
 .top-navbar-link {
   font-family: 'Arimo', Helvetica, Arial, sans-serif;
@@ -38,6 +45,11 @@ body {
 #lastlink {
   border: none;
 }
+.link:hover {
+  background-color: #328cc1;
+}
+
+
 header {
   background-color: #F1F1F1;
   text-align: center;
@@ -74,28 +86,28 @@ header {
 }
 
 .line {
-  border: 3px solid #0b3c5d;
+  border: 10px solid #0b3c5d;
   margin-top: -1px;
 }
 /*Body*/
 main {
   position: relative;
+  background-color: #f1f1f1;
+  text-align: center;
 }
 
 /*About Me Start*/
 .about {
-  text-align: center;
   padding: 20px;
-  background-color: #f1f1f1;
-  color: #0b3c5d;
 }
-.about-title {
+.section-title {
   font-family: "Cantarell", sans-serif;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-size: 35px;
+  color: #0b3c5d;
 }
-.about-line {
+.section-line {
   border: 2px solid #0b3c5d;
   margin: 20px 150px;
 }
@@ -104,7 +116,6 @@ main {
 }
 .about-article {
   width:33.33333%;
-  text-align: center;
   padding: 20px;
 }
 .about-article-info {
@@ -112,59 +123,33 @@ main {
   padding: 20px;
   color: #515151;
 }
-
-
 /*ABout Me FInish*/
-
-
-
-
-
 
 /*Portfolio images*/
 .my_work {
-  background-color: #f1f1f1;
-  padding:30px 0;
-}
-.featured_work_title {
+  padding:0 0 30px 0;
   text-align: center;
-  font: 700 35px/23px'Cantarell', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding: 0 0 30px;
 }
-
-.work_line {
-  margin: 0 80px 30px;
-  border: 2px solid;
-}
-
-
 .work_examples {
   display: flex;
   flex-wrap: wrap;
 }
-
 .right {
   width: 65%;
 }
-
 .left {
   width: 35%;
   float: left;
   padding: 0 4%;
 }
-
 .wedding {
   width: 90%;
   margin: 0 5%;
 }
-
 .portfolio_pic {
   width: 100%;
   height: 100%;
 }
-
 .placeholder {
   margin-bottom: 11%;
 }
@@ -195,6 +180,41 @@ main {
   opacity: 0.6;
 }
 
+
+/*Contact Start*/
+.contact-greeting {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  padding: 0 0 20px;
+  color: #515151;
+}
+.contact-info{
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  border: none;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 40px;
+  padding: 8px;
+}
+#message{
+  height: 160px;
+}
+.submit {
+  background-color: #0b3c5d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: white;
+  font-family: "Cantarell", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 50px 0;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #328cc1;
+}
+
+/*Contact Finish*/
 
 /*FOOTER*/
 footer {
