@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
 }
 
-/*Navbar Start*/
+/*-----------------Navbar Start------------------*/
 .top-navbar {
   position: fixed;
   max-width: 1100px;
@@ -114,24 +114,21 @@ input[type=checkbox]:checked ~ .links{
 		display:block;
 	}
 }
-
-/*Navbar Finish*/
-
-/*Header Start*/
+/*-----------------Navbar Finish------------------*/
+/*-----------------Header Start-------------------*/
 header {
   background-color: #F1F1F1;
   text-align: center;
   padding: 30px 0 0 0;
 }
-
 .logo {
   width: 200px;
   margin: 40px 0 20px 0;
 }
 .cover{
-  background: url(../images/desk_1.jpg) no-repeat center bottom fixed;
+  background: url(../images/desk_1.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: 400px;
+  height: 600px;
   padding: 30px;
 }
 
@@ -182,6 +179,7 @@ main {
 }
 .about-row {
   display: flex;
+  flex-wrap: wrap;
 }
 .about-article {
   width:33.33333%;
@@ -313,6 +311,11 @@ footer {
   margin: auto 15px auto auto;
 }
 
+
+@media screen and (max-width: 725px) {
+  .about-article {
+    width: 50%;
+  }
 @media screen and (max-width: 600px) {
   .title, .subtitle {
     text-align: center;
@@ -334,7 +337,17 @@ footer {
     margin: 0 auto 15px;
   }
 }
-
+@media screen and (max-width: 550px) {
+  .about-img {
+    width: 80px;
+  }
+  .about-article {
+    padding: 0;
+  }
+  .about-article-info {
+    padding: 15px;
+  }
+}
 @media screen and (max-width: 500px) {
   .left-links, .right-links {
     width: 60%;
@@ -358,5 +371,8 @@ footer {
   .by_line {
     margin: 10px;
     float: none;
+  }
+  .contact-info {
+    width: 90%;
   }
 }
