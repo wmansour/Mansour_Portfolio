@@ -2,7 +2,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html">
   <meta charset="utf-8">
-  <title> Waleed Mansour Portfolio</title>
+  <title> Waleed Mansour</title>
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Arimo|Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" />
@@ -22,7 +22,7 @@
     </ul>
   </navbar>
   <header>
-    <img src="images/logo_3.png" class="logo" alt="Logo for Waleed Mansour">
+    <a href="index.html"><img src="images/logo_3.png" class="logo" alt="Logo for Waleed Mansour"></a>
     <hr class="line">
     <section class="cover">
       <h1 class="title">Waleed Mansour</h1>
@@ -72,22 +72,22 @@
       <section class="portfolio-examples">
         <article class="websites portfolio-example">
           <img src="images/website_ex.png" class="portfolio-img">
-          <a href = "http://google.com" class="hover-link">See More</a>
+          <a href = "websites/website.html" class="hover-link">See More</a>
           <h4 class="portfolio-subtitle">Websites</h4>
         </article>
         <article class="branding portfolio-example">
           <img src="images/branding_ex.png" class="portfolio-img">
-          <a href = "http://facebook.com" class="hover-link">See More</a>
+          <a href = "branding/branding.html" class="hover-link">See More</a>
           <h4 class="portfolio-subtitle">Branding</h4>
         </article>
         <article class="photography portfolio-example">
-          <img src="images/city2.jpg" class="portfolio-img">
-          <a href = "http://google.com" class="hover-link">See More</a>
+          <img src="photography/photos/city2.jpg" class="portfolio-img">
+          <a href = "photography/photography.html" class="hover-link">See More</a>
           <h4 class="portfolio-subtitle">Photography</h4>
         </article>
         <article class="emails portfolio-example">
           <img src="images/email_ex2.png" class="portfolio-img">
-          <a href = "http://google.com" class="hover-link">See More</a>
+          <a href = "emails/email.html" class="hover-link">See More</a>
           <h4 class="portfolio-subtitle">Emails</h4>
         </article>
       </section>
@@ -95,10 +95,39 @@
 <!-- Portfolio Finish -->
 
 
+<!-- Contact Start -->
+    <div class="contact" id="contact_form">
+      <h3 class="section-title contact-title">Contact Me</h3>
+      <hr class="section-line">
+      <h4 class="contact-greeting">Feel free to fill out this quick form or send me an email at wmans619@gmail.com</h4>
+      <form id="contact-form" name ="contact" action="">
+        <fieldset>
+          <input type="text" name ="name" placeholder="Name" id="name" class="contact-info"></input><br>
+          <label class="error" for="name" id="name_error">This field is required.</label>
+
+          <input type="text" name="email" placeholder="E-mail" id="email" class="contact-info"></input><br>
+          <label class="error" for="email" id="email_error">This field is required.</label>
+
+          <textarea type="text" name="message" placeholder="Message" id="message" class="contact-info"></textarea><br>
+          <label class="error" for="message" id="message_error">This field is required.</label>
+
+          <input type="submit" name ="submit" id = "submit-btn" class="submit button" value="Send to Waleed" />
+        </fieldset>
+      </form>
+    </div>
+<!-- Contact Finish -->
+
+
+
+
+
+
+
+
 
 
 <!-- Contact Start -->
-    <section class="contact">
+    <!-- <section class="contact">
       <h3 class="section-title contact-title">Contact Me</h3>
       <hr class="section-line">
       <h4 class="contact-greeting">Feel free to fill out this quick form or send me an email at wmans619@gmail.com</h4>
@@ -108,7 +137,7 @@
         <textarea type="text" placeholder="Message" id="message" class="contact-info"></textarea><br>
         <input type="button" id = "submit-btn" class="submit" value="Send to Waleed" />
       </form>
-    </section>
+    </section> -->
 <!-- Contact Finish -->
 
 

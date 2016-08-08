@@ -1,0 +1,211 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*-----------------Navbar Start------------------*/
+.top-navbar {
+  position: fixed;
+  max-width: 1100px;
+  width: 100%;
+  z-index: 99;
+  background-color: #0b3c5d;
+  height: 50px;
+  margin-bottom: 40px;
+}
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+.link {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+.top-navbar-link {
+  display: block;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: #0b3c5d;
+  text-decoration: none;
+}
+.icon {
+  width: 80px;
+}
+.entypo-github, .entypo-mail, .entypo-linkedin {
+  font-family: 'entypo', sans-serif;
+  font-size: 18px;
+}
+.top-navbar-link:hover {
+  background-color: #328cc1;
+  transition: 300ms;
+  cursor: pointer;
+}
+.top-navbar-link:hover + .hidden, .hidden:hover {
+	display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	color: #fff;
+	text-align: right;
+	padding: 10px 15px 0 0;
+	display: none;
+}
+.entypo-menu {
+  font-family: 'entypo', sans-serif;
+  font-size: 30px;
+}
+.show-menu:hover {
+  cursor: pointer;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ .links{
+    display: block;
+}
+@media screen and (max-width: 760px) {
+  .top-navbar ul {
+    position: static;
+    display: none;
+  }
+  .top-navbar li {
+    margin-bottom: :1px;
+  }
+  .top-navbar ul li, .top-navbar-link {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
+/*-----------------Navbar Finish------------------*/
+/*-----------------Header Start-------------------*/
+header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+.logo {
+  width: 200px;
+  margin: 40px 0 20px 0;
+}
+.line {
+  border: 10px solid #0b3c5d;
+  margin-top: -1px;
+}
+/*------------------------Header Finish------------------------*/
+/*------------------------Body Start---------------------------*/
+main {
+  position: relative;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+/*-----------------------About Me Start-------------------------*/
+.email {
+  padding: 50px 0;
+}
+.entypo-left-dir, .entypo-right-dir {
+  font-family: 'entypo', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0b3c5d;
+}
+.left {
+  margin-right: 10%;
+}
+.right {
+  margin-left: 10%;
+}
+.entypo-left-dir:hover, .entypo-right-dir:hover {
+  color: #328cc1;
+  font-size: 40px;
+  transition: 0.5s;
+}
+.section-title {
+  font-family: "Cantarell", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 35px;
+  color: #0b3c5d;
+}
+.section-line {
+  border: 2px solid #0b3c5d;
+  margin: 20px 150px;
+}
+.email-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.email-example {
+  width: 60%;
+  margin: 30px auto;
+  height: 400px;
+  border: 20px solid #515151;
+  border-radius: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.photo {
+  width: 100%;
+}
+/*----------------------About Me Finish-------------------------*/
+/*-------------------------Footer Start-------------------------*/
+footer {
+  background-color: #0b3c5d;
+  display: flex;
+  width: 100%;
+}
+.icon-footer {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  margin: 10px 15px;
+}
+.by_line {
+  float: right;
+  font: 700 12px 'Cantarell', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: white;
+  margin: auto 15px auto auto;
+}
+/*--------------------------Footer Finish------------------------*/
+/*--------------------------Responsive Start---------------------*/
+@media screen and (max-width: 700px) {
+  .email-example {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .email-example {
+    width: 90%;
+    height:400px;
+  }
+  footer {
+    display: inline-block;
+    text-align: center;
+  }
+  .by_line {
+    margin: 10px;
+    float: none;
+  }
+}
+/*---------------------Responsive Finish-------------------*/
