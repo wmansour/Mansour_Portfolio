@@ -18,6 +18,7 @@ body {
   z-index: 99;
   background-color: #0b3c5d;
   height: 50px;
+  margin-bottom: 40px;
 }
 .links {
   list-style-type: none;
@@ -51,28 +52,8 @@ body {
 .top-navbar-link:hover {
   background-color: #328cc1;
   transition: 300ms;
+  cursor: pointer;
 }
-/*.hidden-link:hover {
-  background:#328cc1;
-	color: #fff;
-}
-.hidden {
-  display: none;
-}
-.hidden-link {
-  display: block;
-  float: none;
-  background: #515151;
-  text-align: center;
-}
-.dropdown-link {
-  padding: 0 20px;
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
-	color: white;
-	height: 40px;
-	line-height: 40px;
-  text-decoration: none;
-}*/
 .top-navbar-link:hover + .hidden, .hidden:hover {
 	display: block;
 }
@@ -106,7 +87,7 @@ input[type=checkbox]:checked ~ .links{
   .top-navbar li {
     margin-bottom: :1px;
   }
-  .top-navbar ul li, .top-navbar li a {
+  .top-navbar ul li, .top-navbar-link {
     width: 100%;
   }
   /*Display 'show menu' link*/
@@ -164,7 +145,7 @@ main {
 
 /*-----------------------About Me Start-------------------------*/
 .about {
-  padding: 20px;
+  padding: 50px 20px;
 }
 .section-title {
   font-family: "Cantarell", sans-serif;
@@ -190,11 +171,10 @@ main {
   padding: 20px;
   color: #515151;
 }
-/*----------------------About Me Finish---------------------*/
-
-/*Portfolio images*/
+/*----------------------About Me Finish-------------------------*/
+/*----------------------Portfolio Start-------------------------*/
 .portfolio {
-  padding: 20px;
+  padding: 50px 20px;
   text-align: center;
   background: #0b3c5d;
 }
@@ -251,10 +231,10 @@ main {
   opacity: 0.9;
 }
 
-
-/*Contact Start*/
+/*----------------------Portfolio Finish------------------------*/
+/*----------------------Contact Start---------------------------*/
 .contact {
-  padding: 20px;
+  padding: 50px 20px 20px;
 }
 .contact-greeting {
   font-family: 'Arimo', Helvetica, Arial, sans-serif;
@@ -289,9 +269,8 @@ main {
   transition: 300ms;
 }
 
-/*Contact Finish*/
-
-/*FOOTER*/
+/*-------------------------Contact Finish-----------------------*/
+/*-------------------------Footer Start-------------------------*/
 footer {
   background-color: #0b3c5d;
   display: flex;
@@ -317,8 +296,8 @@ footer {
   color: white;
   margin: auto 15px auto auto;
 }
-
-
+/*--------------------------Footer Finish------------------------*/
+/*--------------------------Responsive Start---------------------*/
 @media screen and (max-width: 725px) {
   .about-article {
     width: 50%;
@@ -329,26 +308,18 @@ footer {
     width: 80%;
     margin: 0 auto;
   }
-}
-@media screen and (max-width: 600px) {
   .title, .subtitle {
     text-align: center;
   }
-
   .logo {
     display: block;
     margin: 30px auto 10px auto;
     float: none;
   }
-
-  .right, .left {
-    width: 100%;
-    padding: 0;
-  }
-
-  .work {
-    width: 77%;
-    margin: 0 auto 15px;
+  .cover {
+    height: 300px;
+    background: url(../images/desk_1.jpg) no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 550px) {
@@ -362,20 +333,6 @@ footer {
     padding: 15px;
   }
 }
-@media screen and (max-width: 500px) {
-  .left-links, .right-links {
-    width: 60%;
-    text-align: center;
-  }
-  .left-links {
-    padding-bottom: 0;
-  }
-  .navbar {
-    padding: 0;
-    margin: 0;
-  }
-}
-
 @media screen and (max-width: 425px) {
   footer {
     display: inline-block;
@@ -390,3 +347,4 @@ footer {
     width: 90%;
   }
 }
+/*---------------------Responsive Finish-------------------*/

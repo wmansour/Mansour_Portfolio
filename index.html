@@ -12,22 +12,10 @@
     <label for="show-menu" class="show-menu entypo-menu"></label>
     <input type="checkbox" id="show-menu" role="button">
     <ul class="links">
-      <li class="link"><a href='#' class="top-navbar-link">Home</a></li>
-      <li class="link"><a href='#about' class="top-navbar-link">About</a>
-        <!-- <ul class="hidden">
-  				<li class="hidden-link"><a href="#" class="dropdown-link">Who Am I</a></li>
-  				<li class="hidden-link"><a href="#" class="dropdown-link">What I Do</a></li>
-  			</ul> -->
-      </li>
-      <li class="link"><a href='#portfolio' class="top-navbar-link">Portfolio</a>
-        <!-- <ul class="hidden">
-  				<li class="hidden-link"><a href="#" class="dropdown-link">Websites</a></li>
-  				<li class="hidden-link"><a href="#" class="dropdown-link">Email</a></li>
-          <li class="hidden-link"><a href="#" class="dropdown-link">Branding</a></li>
-  			</ul> -->
-      </li>
-      </li>
-      <li class="link"><a href='#contact' class="top-navbar-link">Contact</a></li>
+      <li class="link"><div class="top-navbar-link" id="home-link">Home</div></li>
+      <li class="link"><div class="top-navbar-link" id="about-link">About</div></li>
+      <li class="link"><div class="top-navbar-link" id="portfolio-link">Portfolio</div></li>
+      <li class="link"><div class="top-navbar-link" id="contact-link">Contact</div></li>
       <li class="link"><a href = "mailto:wmans619@gmail.com" class="top-navbar-link entypo-mail icon"></a></li>
       <li class="link"><a href="https://github.com/wmansour" target="_blank" class="top-navbar-link entypo-github icon"></a></li>
       <li class="link"><a href="https://www.linkedin.com/in/waleed-mansour-1b029891" target="_blank" class="top-navbar-link entypo-linkedin icon"></a></li>
@@ -46,7 +34,6 @@
   <main>
 
 <!-- About Start -->
-    <a name='about'></a>
     <div class="about">
       <h3 class="about-title section-title">Things I Can and Like To Do</h3>
       <hr class="section-line">
@@ -79,7 +66,6 @@
     </div>
 <!-- About Finish -->
 <!-- Portfolio Start -->
-    <a name='portfolio'></a>
     <section class="portfolio">
       <h3 class="portfolio-title section-title">Things I've Done</h3>
       <hr class="portfolio-line section-line">
@@ -107,8 +93,11 @@
       </section>
     </section>
 <!-- Portfolio Finish -->
+
+
+
+
 <!-- Contact Start -->
-    <a name='contact'></a>
     <section class="contact">
       <h3 class="section-title contact-title">Contact Me</h3>
       <hr class="section-line">
@@ -121,6 +110,10 @@
       </form>
     </section>
 <!-- Contact Finish -->
+
+
+
+
   </main>
 
 <!-- Footer Start -->
@@ -133,4 +126,8 @@
     <p class="by_line">© Waleed Mansour 2016</p>
   </footer>
 <!-- Footer Finish -->
+
+
+  <script src="js/libs/jquery.min.js"></script>
+  <script src = "js/main.js" type="text/javascript"></script>
 </body>
