@@ -1,0 +1,174 @@
+/*Zocial font for social media icons*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #6B7C8E;
+  text-align: center;
+  color: white;
+  padding: 30px 50px;
+}
+
+.logo-header {
+  height: 80px;
+  margin-bottom: 15px;
+}
+.title {
+  font-family: 'Nixie One', Georgia, serif;
+  font-size: 52px;
+}
+.header-line {
+  border: 2px solid white;
+  margin: 15px 70px;
+}
+.subtitle {
+  font-family: 'Ledger', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.cover {
+  display: flex;
+  box-sizing: border-box;
+}
+.column1 {
+  background: url(images/jobfair1.jpg) center;
+  background-size: cover;
+  width: 55%;
+  height: 300px;
+}
+.column2 {
+  width: 45%;
+  background-color: #f7c331;
+}
+.register {
+  background-color: #dcc7aa;
+  text-align: center;
+}
+.register-info {
+  padding: 15px 20px 10px;
+  font-family: 'Ledger', sans-serif;
+  font-size: 17px;
+}
+.register-btn-container {
+  text-align: center;
+}
+.register-btn, .question-btn {
+  margin: 20px 0;
+  background-color: #F7882F;
+  color: white;
+  font-family: 'Nixie One', Georgia, serif;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+}
+.register-btn:hover, .question-btn:hover {
+  background-color: #6B7C8E;
+  cursor: pointer;
+}
+.why-attend {
+  display: flex;
+}
+.column3 {
+  width: 55%;
+  background-color: #6B7C8E;
+  he
+}
+.why-attend-title {
+  margin: 20px;
+  font-family: 'Nixie One', Georgia, serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+.why-attend-line {
+  border: 1px solid white;
+  margin: 5px 10%;
+}
+.reason {
+  padding: 15px 20px 10px;
+  font-family: 'Ledger', sans-serif;
+  font-size: 17px;
+  color: white;
+}
+.column4 {
+  background: url(images/jobfair2.jpg) center;
+  background-size: cover;
+  width: 45%;
+  height: 300px;
+}
+
+.event-info {
+  background-color: #f7c331;
+  text-align: center;
+}
+.info {
+  font-family: 'Ledger', sans-serif;
+  font-size: 17px;
+  padding-top: 30px;
+}
+.bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+.questions {
+  font-family: 'Ledger', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #6B7C8E;
+  padding: 20px;
+  text-align: center;
+}
+.social-links {
+  list-style-type: none;
+}
+.social-link {
+  color: white;
+  text-decoration: none;
+}
+.icon {
+  color: white;
+  display: inline-block;
+  margin: 0 15px 20px;
+}
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 30px;
+}
+.logo-footer {
+  height: 40px;
+}
+.by-line {
+  font-family: 'Ledger', sans-serif;
+  font-size: 12px;
+  color: white;
+  margin: 5px;
+}
+
+@media screen and (max-width:675px) {
+  .cover, .why-attend {
+    flex-wrap: wrap;
+  }
+  .column1, .column2, .column3, .column4{
+    width: 100%;
+  }
+  .register-btn {
+    margin-bottom: 20px;
+  }
+  .event-info{
+  }
+}

@@ -1,0 +1,207 @@
+/*Zocial font for social media icons*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.warning {
+  background-color: #8FACBC;
+  text-align: center;
+  padding: 5px;
+}
+.warning-info, .warning-info a {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+  color: white;
+}
+header {
+  background-color: #031627;
+  text-align: center;
+  padding: 10px;
+}
+.header-logo {
+  height:60px;
+}
+.company-name {
+  color: white;
+  font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 40px;
+}
+.header-line {
+  border: 2px solid #8FACBC;
+  margin: 6px 200px;
+}
+.tagline {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  color: white;
+	font-size: 18px;
+}
+.seperator-line {
+  border: 1px solid white;
+}
+
+
+.links {
+  text-align: center;
+  background-color: #031627;
+  padding: 20px 0;
+}
+.link {
+  border-right: 1px solid white;
+  display: inline;
+  padding: 5px 14px 5px 10px;
+}
+.top-navbar-link {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 18px;
+}
+#lastlink {
+  border: none;
+}
+
+.cover {
+  background: url(images/dock.jpg) center;
+  background-size: cover;
+  height: 400px;
+}
+
+.content {
+  padding: 30px 50px;
+  background-color: #F1F1F1;
+}
+.section-title {
+  margin: 0 0 20px 0;
+  font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 30px;
+  font-weight: lighter;
+}
+.section-info {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+
+.content-line {
+  margin: 10px 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column1 {
+  width: 55%;
+}
+.column2 {
+  width: 35%;
+  padding: 20px;
+}
+.section2-image {
+  width: 100%;
+}
+.section2-info, .section3-info {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  margin-bottom: 25px;
+}
+.section-button {
+  text-decoration: none;
+  margin: 33%;
+  padding: 20px 25px;
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: #30415D;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.section3-title {
+  text-align: right;
+}
+.column3 {
+  width: 35%;
+  padding: 20px;
+  order: 1;
+}
+.column4 {
+  width: 55%;
+  order: 2;
+}
+
+.footer-bar {
+  height: 20px;
+  background-color: #8FACBC;
+}
+
+/*Footer Start*/
+footer {
+  background-color: #031627;
+  padding: 20px 30px;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+}
+.logo-footer {
+  height: 30px;
+}
+.company-name-footer {
+  font-family: 'Arvo', Georgia, Times, serif;
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 0 0 10px 0;
+}
+.footer-info-title {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+
+}
+.footer-link {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+  color: white;
+}
+.footer-info, .by_line {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+}
+/*Footer Finish*/
+
+/*Media Queries for Responsiveness*/
+@media screen and (max-width: 650px) {
+  .second-section, .third-section {
+    text-align: center;
+  }
+  .column1, .column4 {
+    order: 1;
+    width: 70%;
+    margin: 0 15%;
+  }
+  .column2, .column3 {
+    padding: 20px 0;
+    order: 2;
+    width: 100%;
+  }
+  .header-line{
+    width: 300px;
+    margin: 6px auto;
+  }
+  .section3-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .link {
+    padding: 5px;
+  }
+}

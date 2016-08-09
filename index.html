@@ -6,6 +6,8 @@
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Arimo|Fjalla+One|Cantarell:400,400italic,700italic,700" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src = "main.js" type="text/javascript"></script>
 </head>
 <body>
   <navbar class="top-navbar">
@@ -101,44 +103,17 @@
       <hr class="section-line">
       <h4 class="contact-greeting">Feel free to fill out this quick form or send me an email at wmans619@gmail.com</h4>
       <form id="contact-form" name ="contact" action="">
-        <fieldset>
-          <input type="text" name ="name" placeholder="Name" id="name" class="contact-info"></input><br>
-          <label class="error" for="name" id="name_error">This field is required.</label>
+        <input type="text" name ="name" placeholder="Name" id="name" class="contact-info"></input><br>
 
-          <input type="text" name="email" placeholder="E-mail" id="email" class="contact-info"></input><br>
-          <label class="error" for="email" id="email_error">This field is required.</label>
+        <input type="text" name="email" placeholder="E-mail" id="email" class="contact-info"></input><br>
 
-          <textarea type="text" name="message" placeholder="Message" id="message" class="contact-info"></textarea><br>
-          <label class="error" for="message" id="message_error">This field is required.</label>
+        <textarea type="text" name="message" placeholder="Message" id="message" class="contact-info"></textarea><br>
 
-          <input type="submit" name ="submit" id = "submit-btn" class="submit button" value="Send to Waleed" />
-        </fieldset>
+        <input id = "submit-btn" class="submit button" value="Send to Waleed" onClick="ajax.send()"/></input>
       </form>
     </div>
 <!-- Contact Finish -->
 
-
-
-
-
-
-
-
-
-
-<!-- Contact Start -->
-    <!-- <section class="contact">
-      <h3 class="section-title contact-title">Contact Me</h3>
-      <hr class="section-line">
-      <h4 class="contact-greeting">Feel free to fill out this quick form or send me an email at wmans619@gmail.com</h4>
-      <form id="contact-form">
-        <input type="text" placeholder="Name" id="name" class="contact-info"></input><br>
-        <input type="text" placeholder="E-mail" id="email" class="contact-info"></input><br>
-        <textarea type="text" placeholder="Message" id="message" class="contact-info"></textarea><br>
-        <input type="button" id = "submit-btn" class="submit" value="Send to Waleed" />
-      </form>
-    </section> -->
-<!-- Contact Finish -->
 
 
 
@@ -157,6 +132,4 @@
 <!-- Footer Finish -->
 
 
-  <script src="js/libs/jquery.min.js"></script>
-  <script src = "js/main.js" type="text/javascript"></script>
 </body>

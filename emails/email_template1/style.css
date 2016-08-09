@@ -1,0 +1,184 @@
+/*Zocial font for social media icons*/
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*Header Start*/
+header {
+  background-color: #E94C39;
+  padding: 20px 30px 40px;
+}
+.logo {
+  float: left;
+  height: 80px
+}
+.company-name {
+  float: left;
+  font: 40px/46px "Fjalla One", sans-serif;
+  margin: 15px 0 0 5px;
+}
+.social-links{
+  list-style-type: none;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 30px;
+  display: inline-block;;
+  background: #333333;
+  border-radius: 3px;
+  text-align: center;
+  right: 0;
+  padding: 5px 0;
+  box-shadow: 1px 1px 3px #000;
+  margin-left: 4px;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-size: 18px;
+}
+/*Header Finish*/
+/*Cover Photo Start*/
+.bar {
+  background-color: #E9B001;
+  height: 30px;
+}
+
+.cover {
+  background: url(images/cover.jpg) bottom;
+  background-size: cover;
+  height: 300px;
+}
+
+.bar2 {
+  background-color: #E9B001;
+  height: 30px;
+  margin: -2px 0 0 0;
+}
+/*Cover Photo FInish*/
+/*Main Content Start*/
+.content {
+  background-color: #009190;
+}
+.section-title {
+  text-align: center;
+  font: 35px/40px "Fjalla One", sans-serif;
+  padding-top: 30px;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo {
+  width: 28%;
+  margin: 4% 0 4% 4%;
+}
+.figure {
+  width: 100%;
+}
+figcaption {
+  font: 200 18px/20px'Cantarell', sans-serif;
+  letter-spacing: -1px;
+}
+span {
+  color: #E9B001;
+  font-weight: 900;
+}
+.content-line {
+  margin: 0 80px;
+  border: 2px solid;
+}
+.sun-image {
+  padding: 20px 10px;
+  width: 80px;
+  height: 80px;
+}
+.tree-image {
+  padding: 10px;
+  width: 80px;
+  height: 131px;
+}
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.info {
+  width: 44%;
+  margin-left: 4%;
+  display: flex;
+  font: 200 18px/20px'Cantarell', sans-serif;
+  letter-spacing: -1px;
+}
+.info-title {
+  font: 35px/40px "Fjalla One", sans-serif;
+}
+/*Main Conent Finish*/
+/*Footer Start*/
+.footer {
+  background-color: #E94C39;
+  padding: 20px 30px;
+}
+.logo-footer {
+  float: left;
+  height: 30px;
+  margin-top: 18px;
+}
+.company-name-footer {
+  font: 30px/40px "Fjalla One", sans-serif;
+  margin: 15px 0 0 5px;
+}
+
+.footer-info-title {
+  font: 200 18px/25px'Cantarell', sans-serif;
+  letter-spacing: -1px;
+}
+.footer-link {
+  font: 200 14px/25px'Cantarell', sans-serif;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+.footer-info, .by_line {
+  font: 200 14px/25px'Cantarell', sans-serif;
+  letter-spacing: -1px;
+}
+/*Footer Finish*/
+/*Responsive Media Query Start*/
+
+@media screen and (max-width: 650px) {
+  .photo, .info {
+    width: 70%;
+    margin: 4% 15%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+  .company-name, .social-links {
+    float: none;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .logo-footer {
+    display: none;
+  }
+}
+
+/*Responsive Media Query Finish*/
