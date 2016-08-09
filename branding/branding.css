@@ -118,7 +118,7 @@ main {
   text-align: center;
 }
 /*-----------------------About Me Start-------------------------*/
-.photography {
+.branding {
   padding: 50px 0;
 }
 .entypo-left-dir, .entypo-right-dir {
@@ -150,14 +150,29 @@ main {
   border: 2px solid #0b3c5d;
   margin: 20px 150px;
 }
-.photography-row {
+.branding-work {
+  background-color: #0b3c5d;
+}
+.branding-group {
   display: flex;
   flex-wrap: wrap;
 }
-.photo {
-  width: 50%;
+.branding-group-title {
+  font-family: 'Cantarell', sans-serif;
+  letter-spacing: -1px;
+  font-size: 28px;
+  color: white;
+  padding: 30px 0 0 0;
+}
+.big{
+  width: 88%;
   height: 100%;
-  padding: 40px;
+  margin: 30px auto;
+}
+.small{
+  width: 41%;
+  height: 100%;
+  margin: 0 0 0 6%;
 }
 /*----------------------About Me Finish-------------------------*/
 /*-------------------------Footer Start-------------------------*/
@@ -182,13 +197,11 @@ footer {
 }
 /*--------------------------Footer Finish------------------------*/
 /*--------------------------Responsive Start---------------------*/
-@media screen and (max-width: 725px) {
-  .photo {
+@media screen and (max-width: 650px) {
+  .big, .small {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
-}
-@media screen and (max-width: 625px) {
   .logo {
     display: block;
     margin: 30px auto 10px auto;
