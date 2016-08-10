@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Antic', sans-serif;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #70859c;
+}
+
+/*NAVBAR*/
+nav {
+  background-color: #F1F1F1;
+}
+.icon-bar {
+  background-color: #70859c;
+}
+.navbar-toggle {
+  border-color: #70859c;
+}
+.navbar-collapse {
+  background-color: #F1F1F1;
+}
+.top-navbar-link:hover {
+  background-color: #E8A9A0;
+}
+.navbar-nav {
+  margin: 0 -15px;
+}
+.top-navbar-link {
+  color: #70859c;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+.top-navbar-link:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hashtag {
+  float: left;
+}
+
+/*HEADER*/
+header {
+  background: url(../images/wedding_logo_dark.png) center;
+  background-size: cover;
+  margin: 48px 0 0 0;
+  padding-bottom: 30px;
+  /*height: 600px;*/
+  color: white;
+  position: relative;
+}
+.title {
+  font-family: 'Sacramento', cursive;
+  padding-top: 300px;
+  font-size: 110px;
+  text-shadow: 2px 2px 12px #000;
+}
+.subtitle {
+  font-family: 'Sacramento', cursive;
+  text-shadow: 2px 2px 8px #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*THEIR STORY*/
+.story {
+  background-color: #F1F1F1;
+  padding-bottom: 30px;
+}
+.story-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.story-pic {
+  background: url(../images/kiss.png) center center;
+  background-size: cover;
+  height: 400px;
+  width: 35%;
+  margin: 20px;
+}
+.story-info {
+  width: 55%;
+  margin: 10px 20px;
+  font-size: 20px;
+}
+/*WEDDING INFORMATION*/
+.wedding {
+  padding-bottom: 30px;
+}
+.section-line {
+  border: 1px solid #70859c;
+  margin: -5px 100px 20px;
+}
+.section-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  color: #70859c;
+  padding-top: 60px;
+  margin: 0;
+}
+.wedding-info-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wedding-info {
+  padding: 10px 0;
+  width: 50%;
+}
+.article-title {
+  font-size: 22px;
+}
+.article-line {
+  border: 1px solid #70859c;
+  margin: 3px 40px;
+}
+.wedding-info img {
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+.wedding-info-container a {
+  color: white;
+}
+.wedding-info-container a:hover {
+  text-decoration: none;
+  background-color: #70859c;
+}
+.oakhurst, .hilton {
+  padding: 15px 0;
+  font-size: 20px;
+}
+.wedding-info-link {
+  background-color: #E8A9A0;
+  padding: 10px 20px;
+}
+/*BRIDAL PARTY CAROUSEL*/
+.bridal-party-section {
+  background-color: #70859c;
+  padding-bottom: 40px;
+}
+.party-title {
+  color: white;
+  margin: 0;
+}
+.party-line {
+  border: 1px solid white;
+  margin: -5px 100px 20px;
+}
+.carousel {
+  margin: 0 auto;
+  max-width: 40%;
+}
+.party-carousels {
+  display: flex;
+  flex-wrap: wrap;
+}
+.member-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+.member-role {
+  font-size: 24px;
+}
+.glyphicon {
+  color: white;
+  opacity: 1;
+}
+/*RSVP*/
+.rsvp {
+}
+.rsvp-img {
+  width: 50%;
+  margin: 10px auto 40px;
+}
+
+/*Footer*/
+footer {
+  background-color: #70859c;
+  text-align: left;
+}
+.by_line {
+  float: right;
+  text-transform: uppercase;
+  padding: 40px 25px 0 0;
+  color: white;
+  font-size: 15px;
+}
+.by_line a {
+  color: white;
+}
+.logo {
+  padding: 15px;
+  height: 100px;
+}
+
+/*RESPONSIVE ADJUSTMENTS*/
+@media screen and (max-width: 950px){
+  .rsvp-img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 820px){
+  .story-pic {
+    width:80%;
+    margin: 20px auto;
+  }
+  .story-info {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wedding-info {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .carousel {
+    min-width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 425px){
+  .title {
+    font-size: 80px;
+  }
+
+}

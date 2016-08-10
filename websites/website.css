@@ -117,8 +117,8 @@ main {
   background-color: #f1f1f1;
   text-align: center;
 }
-/*-----------------------About Me Start-------------------------*/
-.email {
+/*-----------------------Websites Start-------------------------*/
+.website {
   padding: 50px 0;
 }
 .entypo-left-dir, .entypo-right-dir {
@@ -150,23 +150,26 @@ main {
   border: 2px solid #0b3c5d;
   margin: 20px 150px;
 }
-.email-row {
+.website-work {
+  background-color: #0b3c5d;
+}
+.website-group {
   display: flex;
   flex-wrap: wrap;
 }
-.email-example {
-  width: 60%;
+.website-group-title {
+  font-family: 'Cantarell', sans-serif;
+  letter-spacing: -1px;
+  font-size: 28px;
+  color: white;
+  padding: 30px 0 0 0;
+}
+.example{
+  width: 75%;
+  height: 100%;
   margin: 30px auto;
-  height: 400px;
-  border: 20px solid #515151;
-  border-radius: 20px;
-  overflow: scroll;
-  overflow-x: hidden;
 }
-.photo {
-  width: 100%;
-}
-/*----------------------About Me Finish-------------------------*/
+/*----------------------Websites Finish-------------------------*/
 /*-------------------------Footer Start-------------------------*/
 footer {
   background-color: #0b3c5d;
