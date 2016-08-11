@@ -309,7 +309,7 @@ footer {
 }
 @media screen and (max-width: 625px) {
   .portfolio-example {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .title, .subtitle {
@@ -342,13 +342,15 @@ footer {
     display: inline-block;
     text-align: center;
   }
-
   .by_line {
     margin: 10px;
     float: none;
   }
   .contact-info {
     width: 90%;
+  }
+  .section-line {
+    margin: 20px 60px;
   }
 }
 /*---------------------Responsive Finish-------------------*/
