@@ -1,0 +1,223 @@
+* {
+  padding 0;
+  margin: 0;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  overflow-x: hidden;
+}
+/*-------------------Header and Navbar Start-------------------*/
+header {
+  background: #0060b6;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+}
+.header-title {
+  font-size:1rem;
+
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-item {
+  list-style: none;
+}
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: #222;
+  transform: translateX(-100%);
+  text-align: center;
+}
+#open {
+  z-index:999;
+}
+#open, #close {
+  color:#0060b6;
+  font-size: 30px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+}
+#nav-fb {
+  font-size: 20px;
+}
+.nav-list {
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+.nav-link {
+  padding: 10px 20px;
+  display: block;
+}
+.nav-link:hover {
+  background: #0060b6;
+}
+nav {
+  z-index:1000;
+}
+.main-navigation.open {
+  transform: translateX(0);
+}
+.main-navigation .nav-toggle {
+  left: 5%;
+  top: 5%;
+}
+.wrapper, nav {
+  transform: translateX(0);
+  transition: transform 0.6s ease;
+}
+.wrapper.open {
+  transform: translateX(20%);
+}
+/*-------------------Header and Navbar Finish-------------------*/
+/*-----------------------Cover Start----------------------------*/
+.cover {
+  background-color: #f1f1f1;
+}
+.title {
+  width: 60%;
+  margin: 120px 20%;
+}
+/*-----------------------Cover Finish----------------------------*/
+/*-----------------------About Start--------------------*/
+.about {
+  display: flex;
+}
+.about-left {
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #333;
+}
+.groupshot {
+  width: 100%;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 40%;
+  background: #0060b6;
+  text-align: center;
+  padding: 20px 30px 30px;
+}
+.about-title {
+  margin:0 0 20px 0;
+}
+/*----------------------About Finish--------------------*/
+/*-----------------------Upcoming Shows Start--------------------*/
+.shows {
+  padding: 60px;
+  background: #f1f1f1;
+}
+.shows-title {
+  margin-left: 100px;
+}
+.show {
+  text-align: center;
+  list-style-type: none;
+  margin: 30px;
+}
+/*----------------------Upcoming Shows Finish--------------------*/
+/*-----------------------Team Start--------------------*/
+.team {
+  color: #0060b6;
+}
+.team-title {
+  margin: 60px 160px 50px;
+}
+.teampics {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-pic {
+  width: 100%;
+  bottom: 0px;
+}
+.team-member {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  margin-bottom: -7px;
+}
+.hover-link {
+  background: #0060b6;
+  padding: 2% 0;
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+.team-member:hover .hover-link {
+  opacity: 0.8;
+}
+
+/*----------------------Team Finish--------------------*/
+/*-----------------------Footer Start----------------------------*/
+footer {
+  background: #0060b6;
+  color: #fff;
+  text-align: right;
+  padding: 25px;
+}
+/*----------------------Footer Finish----------------------------*/
+/*Responsive Adjustments*/
+@media screen and (max-width: 800px) {
+  .about {
+    flex-wrap: wrap;
+  }
+  .about-left, .about-right {
+    width: 100%;
+  }
+  .shows-title{
+    margin-left: 0;
+    text-align: center;
+  }
+  .team-title {
+    margin: 50px 0;
+    text-align: center;
+  }
+  .upcoming-shows {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team-member {
+    width: 50%;
+  }
+  .shows {
+    padding: 30px;
+  }
+  .title {
+    width: 80%;
+    margin: 60px 10%;
+  }
+  .main-navigation {
+    width: 60%;
+  }
+  .wrapper.open {
+    transform: translateX(40%);
+  }
+}

@@ -118,9 +118,6 @@ main {
   text-align: center;
 }
 /*-----------------------About Me Start-------------------------*/
-.branding {
-  padding: 50px 0;
-}
 .entypo-left-dir, .entypo-right-dir {
   font-family: 'entypo', sans-serif;
   font-size: 35px;
@@ -145,10 +142,11 @@ main {
   letter-spacing: -1px;
   font-size: 35px;
   color: #0b3c5d;
+  padding: 40px 0;
 }
 .section-line {
   border: 2px solid #0b3c5d;
-  margin: 20px 150px;
+  margin: 0 150px 20px;
 }
 .branding-work {
   background-color: #0b3c5d;
@@ -172,7 +170,7 @@ main {
 .small{
   width: 41%;
   height: 100%;
-  margin: 0 0 0 6%;
+  margin: 30px 0 30px 6%;
   transition: left 0.5s;
 }
 /*----------------------About Me Finish-------------------------*/
