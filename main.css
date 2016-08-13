@@ -5,15 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 /*-----------------Navbar Start------------------*/
 .top-navbar {
   position: fixed;
-  max-width: 1100px;
   width: 100%;
   z-index: 99;
   background-color: #0b3c5d;
@@ -98,42 +92,32 @@ input[type=checkbox]:checked ~ .links{
 /*-----------------Navbar Finish------------------*/
 /*-----------------Header Start-------------------*/
 header {
-  background-color: #F1F1F1;
-  text-align: center;
+  background-color:#0b3c5d;
   padding: 30px 0 0 0;
 }
-.logo {
-  width: 200px;
-  margin: 40px 0 20px 0;
-}
 .cover{
-  background: url(../images/desk.jpg) no-repeat center center fixed;
-  background-size: cover;
   height: 600px;
   padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
-  text-align: left;
-  font: 48px/46px "Fjalla One", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
   text-transform: uppercase;
-  margin: 0 0 10px 0;
   color: white;
-  text-shadow: 1px 1px 12px #000;
 }
 
 .subtitle {
-  text-align: left;
-  font: 700 21px/23px "Cantarell", sans-serif;
+  font-family:"Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
   text-transform: uppercase;
   letter-spacing: -1px;
   color: white;
-  text-shadow: 1px 1px 8px #000;
-}
-
-.line {
-  border: 10px solid #0b3c5d;
-  margin-top: -1px;
 }
 /*------------------------Header Finish------------------------*/
 /*------------------------Body Start---------------------------*/
@@ -142,16 +126,100 @@ main {
   background-color: #f1f1f1;
   text-align: center;
 }
-
-/*-----------------------About Me Start-------------------------*/
-.about {
-  padding: 50px 20px;
-}
-.section-title {
+/*----------------------Portfolio Start-------------------------*/
+.portfolio-title, .section-title{
   font-family: "Cantarell", sans-serif;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-size: 35px;
+  color: white;
+}
+.portfolio-line {
+  border: 2px solid white;
+}
+.portfolio {
+  padding: 50px 20px;
+  text-align: center;
+  background: url(images/desk_background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+.portfolio-title {
+  color: white;
+}
+.portfolio-line {
+  border: 2px solid white;
+  margin: 20px 250px;
+}
+.portfolio-examples {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.portfolio-img {
+  width: 100%;
+}
+
+/*Hover Effects*/
+.portfolio-example {
+  position: relative;
+  width: 40%;
+  margin: 20px 5%;
+}
+.hover-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  right: 0px;
+  top:0px;
+  color: #fff;
+  background: #333;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.portfolio-info {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.portfolio-btn {
+  margin: 0 auto;
+  background-color: #333;
+  border: 3px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Cantarell", sans-serif;
+  letter-spacing: -1px;
+  font-size: 20px;
+}
+.portfolio-example:hover .hover-link {
+  opacity: 0.8;
+}
+.portfolio-btn:hover {
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+}
+
+/*----------------------Portfolio Finish------------------------*/
+/*-----------------------About Me Start-------------------------*/
+.about {
+  padding: 50px 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.about-title {
   color: #0b3c5d;
 }
 .section-line {
@@ -172,74 +240,19 @@ main {
   color: #515151;
 }
 /*----------------------About Me Finish-------------------------*/
-/*----------------------Portfolio Start-------------------------*/
-.portfolio {
-  padding: 50px 20px;
-  text-align: center;
-  background: #0b3c5d;
-}
-.portfolio-title {
-  color: white;
-}
-.portfolio-line {
-  border: 2px solid white;
-}
-.portfolio-examples {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolio-img {
-  width: 80%;
-  /*border-radius: 10px;*/
-  margin: 20px auto 10px;
-}
-.portfolio-subtitle {
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
-  color: white;
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-/*Hover Effects*/
-.portfolio-example {
-  position: relative;
-  width: 50%;
-}
-.portfolio-example .hover-link {
-  width: 25%;
-  height: 20%;
-  margin: 25% auto;
-  padding-top: 5%;
-  border-radius: 3px;
-  opacity: 0;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  top:0px;
-  color: #ffffff;
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
-  background: #0b3c5d;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
-  -o-transition: opacity 300ms;
-  transition: opacity 300ms;
-}
-.portfolio-example:hover .hover-link {
-  opacity: 0.9;
-}
-
-/*----------------------Portfolio Finish------------------------*/
 /*----------------------Contact Start---------------------------*/
 .contact {
-  padding: 50px 20px 20px;
+  padding: 50px 200px 20px;
+  margin: 0 auto;
+  background-color: #0b3c5d;
+  color: white;
+}
+.contact-line {
+  border: 2px solid white;
 }
 .contact-greeting {
   font-family: 'Arimo', Helvetica, Arial, sans-serif;
   padding: 0 0 20px;
-  color: #515151;
 }
 .contact-info{
   font-family: 'Arimo', Helvetica, Arial, sans-serif;
@@ -256,11 +269,11 @@ fieldset {
   height: 160px;
 }
 .submit {
-  background-color: #0b3c5d;
+  background-color: #f1f1f1;
+  color: #0b3c5d;
   border: none;
   border-radius: 5px;
   padding: 10px 30px;
-  color: white;
   font-family: "Cantarell", sans-serif;
   font-size: 18px;
   margin: 0 auto 50px;
@@ -271,6 +284,7 @@ fieldset {
 .submit:hover {
   background-color: #328cc1;
   transition: 300ms;
+  color: white;
 }
 
 /*-------------------------Contact Finish-----------------------*/
@@ -302,6 +316,11 @@ footer {
 }
 /*--------------------------Footer Finish------------------------*/
 /*--------------------------Responsive Start---------------------*/
+@media screen and (max-width: 800px) {
+  .contact {
+    padding: 50px 20px
+  }
+}
 @media screen and (max-width: 725px) {
   .about-article {
     width: 50%;
@@ -309,21 +328,14 @@ footer {
 }
 @media screen and (max-width: 625px) {
   .portfolio-example {
-    width: 100%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 15px auto;
   }
-  .title, .subtitle {
-    text-align: center;
-  }
-  .logo {
-    display: block;
-    margin: 30px auto 10px auto;
-    float: none;
+  .title {
+    font-size: 45px;
   }
   .cover {
-    height: 300px;
-    background: url(../images/desk.jpg) no-repeat;
-    background-size: cover;
+    height: 400px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -336,6 +348,9 @@ footer {
   .about-article-info {
     padding: 15px;
   }
+  .contact-info {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 425px) {
   footer {
@@ -346,10 +361,7 @@ footer {
     margin: 10px;
     float: none;
   }
-  .contact-info {
-    width: 90%;
-  }
-  .section-line {
+  .section-line, .portfolio-line {
     margin: 20px 60px;
   }
 }

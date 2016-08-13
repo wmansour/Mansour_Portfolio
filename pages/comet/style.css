@@ -4,7 +4,11 @@
 }
 body {
   font-family: 'Muli', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+html {
+  overflow-y: scroll;
 }
 /*-------------------Header and Navbar Start-------------------*/
 header {
@@ -39,9 +43,12 @@ header {
 }
 #open {
   z-index:999;
+  color: black;
+}
+#close {
+  color: white;
 }
 #open, #close {
-  color:#0060b6;
   font-size: 30px;
   position: fixed;
   top: 15px;

@@ -5,15 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  max-width: 1100px;
-  margin: 0 auto;
-}
 
 /*-----------------Navbar Start------------------*/
 .top-navbar {
   position: fixed;
-  max-width: 1100px;
   width: 100%;
   z-index: 99;
   background-color: #0b3c5d;
@@ -96,66 +91,40 @@ input[type=checkbox]:checked ~ .links{
 	}
 }
 /*-----------------Navbar Finish------------------*/
-/*-----------------Header Start-------------------*/
-header {
-  background-color: #F1F1F1;
-  text-align: center;
-  padding: 30px 0 0 0;
-}
-.logo {
-  width: 200px;
-  margin: 40px 0 20px 0;
-}
-.line {
-  border: 10px solid #0b3c5d;
-  margin-top: -1px;
-}
-/*------------------------Header Finish------------------------*/
 /*------------------------Body Start---------------------------*/
 main {
   position: relative;
-  background-color: #f1f1f1;
   text-align: center;
 }
 /*-----------------------About Me Start-------------------------*/
-.entypo-left-dir, .entypo-right-dir {
-  font-family: 'entypo', sans-serif;
-  font-size: 35px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #0b3c5d;
+main {
+  background: #0b3c5d;
 }
-.left {
-  margin-right: 10%;
+.work-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+  padding: 100px 0 30px 0;
 }
-.right {
-  margin-left: 10%;
-}
-.entypo-left-dir:hover, .entypo-right-dir:hover {
-  color: #328cc1;
-  font-size: 40px;
-  transition: 0.5s;
-}
-.section-title {
+.work-subtitle {
   font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
-  font-size: 35px;
-  color: #0b3c5d;
-  padding: 40px 0;
+  color: white;
+  margin-bottom:40px;
 }
-.section-line {
-  border: 2px solid #0b3c5d;
-  margin: 0 150px 20px;
-}
-.email-subtitle {
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
-  color: #515151;
-  padding-bottom: 30px;
+.work-section {
+  background-color: white;
 }
 .email-row {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 75px 0;
 }
 .email-example {
   width: 28%;
@@ -196,6 +165,15 @@ footer {
   .email-example {
     width: 60%;
     margin: 0 auto 30px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .work-title {
+    font-size: 45px;
+  }
+  .work-subtitle {
+    font-size: 15px;
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 450px) {
