@@ -5,10 +5,11 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    $header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: #name <$email>";
+    $header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
 
     $body =
     @"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:i",time())."<br>
+    $name <br>
     <hr>
     $message
     <hr>
