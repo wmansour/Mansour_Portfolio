@@ -13,6 +13,13 @@ $(function() {
   })
 })
 
+$(function() {
+  $('.nav-toggle').on('click', function() {
+    $('.wrapper').toggleClass('open');
+    $('nav').toggleClass('open');
+    $('#open').toggleClass('turn');
+  });
+});
 
 
 // Contact Form

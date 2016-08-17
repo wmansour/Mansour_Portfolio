@@ -1,99 +1,75 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /*-----------------Navbar Start------------------*/
-.top-navbar {
+.main-navigation {
   position: fixed;
-  width: 100%;
-  z-index: 99;
-  background-color: #0b3c5d;
-  height: 50px;
-  margin-bottom: 40px;
-}
-.links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-}
-.link {
-  display: inline-block;
-  float: left;
-  margin-right: 1px;
-}
-.top-navbar-link {
-  display: block;
-  width: 120px;
-  height: 50px;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: #222;
   text-align: center;
-  line-height: 50px;
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  transform: translate(100%);
+  transition: transform 0.6s ease;
+  z-index: 99;
+}
+.nav-list {
+  margin-top: 70px;
+}
+.nav-link {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0;
+  font-family:"Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.nav-link:hover {
+  background: #328cc1;
+}
+.nav-item {
+  list-style: none;
+}
+#open {
+  text-align: center;
+  z-index: 100;
+  transition: transform 0.6s ease;
+  background: #0b3c5d;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  padding-top: 5px;
+}
+#open, #close {
   color: white;
-  background-color: #0b3c5d;
-  text-decoration: none;
-}
-.icon {
-  width: 80px;
-}
-.entypo-github, .entypo-mail, .entypo-linkedin {
-  font-family: 'entypo', sans-serif;
-  font-size: 18px;
-}
-.top-navbar-link:hover {
-  background-color: #328cc1;
-  transition: 300ms;
-  cursor: pointer;
-}
-.top-navbar-link:hover + .hidden, .hidden:hover {
-	display: block;
-}
-/*Style 'show menu' label button and hide it by default*/
-.show-menu {
-	color: #fff;
-	text-align: right;
-	padding: 10px 15px 0 0;
-	display: none;
-}
-.entypo-menu {
-  font-family: 'entypo', sans-serif;
   font-size: 30px;
-}
-.show-menu:hover {
+  position: fixed;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
 }
-/*Hide checkbox*/
-input[type=checkbox]{
-    display: none;
+#open.turn {
+  transform: rotate(90deg);
 }
-/*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ .links{
-    display: block;
+.main-navigation.open {
+  transform: translateX(0);
 }
-@media screen and (max-width: 760px) {
-  .top-navbar ul {
-    position: static;
-    display: none;
-  }
-  .top-navbar li {
-    margin-bottom: :1px;
-  }
-  .top-navbar ul li, .top-navbar-link {
-    width: 100%;
-  }
-  /*Display 'show menu' link*/
-	.show-menu {
-		display:block;
-	}
+.wrapper {
+  transition: transform 0.6s ease;
+}
+.wrapper.open {
+  transform: translate(-20%);
 }
 /*-----------------Navbar Finish------------------*/
 /*-----------------Header Start-------------------*/
 header {
   background-color:#0b3c5d;
-  padding: 30px 0 0 0;
 }
 .cover{
   height: 600px;
@@ -103,14 +79,12 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-
 .title {
   font-family: 'Montserrat', sans-serif;
   font-size: 90px;
   text-transform: uppercase;
   color: white;
 }
-
 .subtitle {
   font-family:"Cantarell", sans-serif;
   font-weight: 700;
@@ -293,19 +267,8 @@ footer {
   background-color: #0b3c5d;
   display: flex;
   width: 100%;
+  height: 50px;
 }
-
-.icon-footer {
-  display: inline-block;
-  color: white;
-  font-size: 20px;
-  margin: 10px 15px;
-}
-
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
-
 .by_line {
   float: right;
   font: 700 12px 'Cantarell', sans-serif;
@@ -336,6 +299,12 @@ footer {
   }
   .cover {
     height: 400px;
+  }
+  .main-navigation {
+    width: 60%;
+  }
+  .wrapper.open {
+    transform: translateX(-40%);
   }
 }
 @media screen and (max-width: 550px) {
